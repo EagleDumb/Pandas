@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt 
 import numpy as np
 
-xpoints = np.array([1,8])
-ypoints = np.array([2,7])
+xpoints = np.array([2018,2019,2020,2021,2022])
+ypoints = np.array([10,8,7,9,12])
 
-plt.title("title")
+plt.title("biểu đồ sản lượng khoai mì theo năm", color = "black", backgroundcolor = "yellow")
 plt.plot(xpoints,ypoints)
 plt.show()
