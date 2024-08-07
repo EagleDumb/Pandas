@@ -75,6 +75,25 @@ for i in xeploai_list:
 
 df["Hoc Bong"] = tinhhocbong
 
+
+def check_subject (index):
+    subject_list = ["Toán","Lý","Hoá","Văn","Sử","Địa","Anh","Pháp","Trung","Sinh"]
+    return subject_list[index - 1] #use index to return the subject of the column
+
+object_value = []
+
+for row in df.itertuples(index = False): 
+    goal_value = ""
+    for j in range (len(row)):
+        print(row[j])
+        #if (str(type(row[j])) != "<class 'str'>") and (row[j] < 5): #if row[j] is not string AND row[j] < 5
+            #goal_value = check_subject(j) + "" + goal_value #used to add in the subject
+    #object_value.append(goal_value)
+
+
+
+#df["Thi Lai"] = object_value
+
 print(df)
 #dataframe = pd.DataFrame(sum_data, index = [0])
 #print(dataframe)
